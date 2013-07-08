@@ -3,9 +3,46 @@
 A vim plugin to integrate the [Kendo UI Lint](https://github.com/kendo-labs/kendo-lint) 
 project with [the vim editor](http://vim.org).
 
-## About KendoUI-Lint.vim
+## Install The Linter And Plugin
 
-Install this plugin via Pathogen:
+There are a few things you need to do to get this working:
+
+1. Install NodeJS
+2. Install [Kendo UI Lint](https://github.com/kendo-labs/kendo-lint)
+3. Install the vim plugin
+
+### 1. Install NodeJS
+
+Head over to [NodeJS.org](http://nodejs.org) and grab the latest 
+version. Follow the download and installation instructions for your 
+operating system.
+
+### 2. Install Kendo UI Lint
+
+Open a command prompt or terminal window and run
+
+`npm install -g kendo-lint`
+
+This will install the Kendo UI Lint project globally, so that it can
+be run from anywhere on your box.
+
+### 3. Install The Vim Plugin
+
+I reocommend using [Pathogen](https://github.com/tpope/vim-pathogen)
+to install plugins for vim. This makes it easy to install:
+
+`$ git clone https://github.com/kendo-labs/kendoui-lint.vim ~/.vim/bundle/kendoui-lint.vim/`
+
+## Run The KendoUI-Lint Plugin
+
+To run the Kendo UI Linter from any JavaScript or HTML file, execute
+this command in vim:
+
+`:KUILint`
+
+I also recommend mapping the `KUILint` command, as well. For example:
+
+`nnoremap <silent> <localleader>l :execute 'KUILint'<CR>`
 
 ## How to Contribute
 
