@@ -4,4 +4,4 @@
 " Author: Derick Bailey <derick@kendoui.com>
 "
 
-command! KUILint call kendoui#KUILintJS()
+command! KUILint call kendoui#KUILintHTML()
